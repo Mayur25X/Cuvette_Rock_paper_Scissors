@@ -156,5 +156,12 @@ const winContainer = () => {
 
 
 
+let ruleBox = document.querySelector("#ruleBox")
+ruleBox.style.display= "none"
+const hideRule = () => {
+  ruleBox.style.display= "none"
+}
 
-
+const showRules = () => {
+  ruleBox.style.display="flex"
+}
