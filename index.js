@@ -36,11 +36,12 @@ const SeletecH = (hand) => {
 };
 
 const updateScore = (uScore, cScore) => {
-  let userScore = document.querySelector("#num2");
-  let computerScore = document.querySelector("#num1");
-  userScore.textContent = uScore;
-  computerScore.textContent = cScore;
+  let userScoreElem = document.querySelector("#num2");
+  let computerScoreElem = document.querySelector("#num1");
+  userScoreElem.textContent = uScore;
+  computerScoreElem.textContent = cScore;
 };
+
 const playAgain = () => {
   let hands = document.querySelector(".hands");
   let contest = document.querySelector(".contest");
@@ -95,7 +96,6 @@ const compareHands = (userChoice, computerChoice) => {
       return;
     } else {
       winner.textContent = "YOU WIN";
-
       userScore += 1;
       localStorage.setItem("userScore", userScore);
       console.log("updated userScore:", userScore);
@@ -114,7 +114,6 @@ const compareHands = (userChoice, computerChoice) => {
       return;
     } else {
       winner.textContent = "YOU WIN";
-
       userScore += 1;
       localStorage.setItem("userScore", userScore);
       console.log("updated userScore:", userScore);
@@ -125,15 +124,6 @@ const compareHands = (userChoice, computerChoice) => {
     }
   }
 };
-
-const winContainer = () => {
-  let container = document.querySelector(".container");
-  let footer = document.querySelector(".footer");
-  container.style.display = "none";
-  footer.style.display = "none";
-  winPlay.style.display = "flex";
-};
-
 const Showcontianer = () => {
   container.style.display = "flex";
   footer.style.display = "flex";
@@ -145,9 +135,15 @@ const Showcontianer = () => {
   contest.style.display = "none";
   localStorage.setItem("userScore", 0);
   localStorage.setItem("computerScore", 0);
-  uScore = 0;
+  userScore = 0;
   ComScore = 0;
-  console.log("playe", localStorage.getItem("userScore"));
-  updateScore(uScore, ComScore);
+  console.log("player", localStorage.getItem("userScore"));
+  updateScore(userScore, ComScore);
 };
-// console.log(userScore);
+const winContainer = () => {
+  let container = document.querySelector(".container");
+  let footer = document.querySelector(".footer");
+  container.style.display = "none";
+  footer.style.display = "none";
+  winPlay.style.display = "flex";
+};
