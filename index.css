@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #8cc461;
+  font-family: "Roboto";
+}
+.container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#scoreHeader {
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 158px;
+  width: 950px;
+  border-radius: 13px;
+  margin: 0 auto;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forHand {
+  margin-top: 180px;
+}
+
+.scores {
+  display: flex; /* add this line */
+  align-items: center;
+  margin: 10px;
+}
+
+.scoreC {
+  width: 139px;
+  height: 128px;
+  background: #ffffff;
+  border-radius: 9px;
+  margin-left: 10px;
+}
+h1,
+h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: #ffff;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.Headertitle {
+  display: inline-block;
+  align-items: center;
+  height: 100%;
+  margin: 15px 14px;
+}
+
+.Headertitle h1 {
+  margin: 0;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #scoreHeader {
+    width: 100%;
+  }
+
+  h1,
+  h2 {
+    font-size: 30px;
+  }
+
+  .Headertitle h1 {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+
+  .Headertitle h1 {
+    margin-right: 5px;
+  }
+}
+
+.Player {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 600;
+  /* line-height: 20px; */
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 5px 10px;
+}
+#num1,
+#num2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 80px;
+  text-align: center;
+  color: #252525;
+}
+.hands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  width: 500px;
+  height: 430px;
+  flex-wrap: wrap;
+  height: 100%;
+  background-image: url("/assets/triangle.png");
+  background-repeat: no-repeat !important;
+  background-position: center;
+}
+.scissors {
+  margin-left: 20px;
+}
+.paper {
+  margin-right: 20px;
+}
+
+.hands .hand {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hands .hand:hover {
+  transform: translate3d(0px, -8px, 0px);
+}
+.contest {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 650px;
+  height: 430px;
+  /* give space around */
+}
+
+.contest .HandImage {
+  /* cursor: pointer; */
+  transition: all 0.3s;
+}
+.contest img {
+  width: 80%;
+  height: 80%;
+}
+
+.contest > div {
+  flex: 1;
+}
+.contest h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contest .HandImage:hover {
+  transform: translate3d(0px, -8px, 0px);
+  display: flex;
+  justify-content: center;
+}
+
+.contest .HandImage {
+  /* transform: translate3d(0px, -8px, 0px); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  /* give space around */
+}
+
+.contest .middle h1,
+h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 39px;
+  line-height: 46px;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  /* text-align: center; */
+  /* color: #ffffff; */
+  /* /* text-align: center; */
+}
+.middle h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.Playagian {
+  margin-top: 20px;
+
+  background: #ffffff;
+  border-radius: 9px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+
+  color: #6b6b6b;
+  /* text-align: center;
+   */
+  cursor: pointer;
+  transition: all 0.15s;
+  padding: 10px 20px;
+}
+
+.Playagian:hover {
+  background: #ebebeb;
+  color: #252525;
+  transform: translate3d(0px, -2px, 0px);
+}
+
+@media screen and (max-width: 768px) {
+  .hands {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hands .hand {
+    margin: 10px;
+  }
+
+  .contest {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contest .HandImage {
+    margin: 10px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 116px;
+}
+.rules {
+  margin-top: 20px;
+  /* background: #ffffff; */
+  border-radius: 9px;
+  font-family: "Roboto";
+  font-style: normal;
+  border: 2px solid #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin: 20px 20px;
+  /* text-align: center; */
+  cursor: pointer;
+  transition: all 0.15s;
+  padding: 10px 40px;
+}
+#next {
+  margin-right: 10px;
+}

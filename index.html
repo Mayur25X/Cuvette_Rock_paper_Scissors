@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+
+
+        <!-- Header Part -->
+
+
+        <div id="scoreHeader">
+            <div class="Headertitle">
+                <h2>ROCK</h2>
+                <h2>PAPER</h2>
+                <h2>SCISSORS</h2>
+            </div>
+            <div class="scores">
+                <div class="scoreC">
+                    <p class="Player">COMPUTER</p>
+                    <p class="Player">SCORE</p>
+                    <h1 id="num1">0</h1>
+                </div>
+                <div class="scoreC">
+                    <p class="Player">YOUR</p>
+                    <p class="Player">SCORE</p>
+                    <h1 id="num2">0</h1>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Header part END -->
+
+
+        <!-- Main Part -->
+        <div class="forHand">
+            <div class="hands">
+
+                <div class=" hand paper">
+                    <img src="/assets/Paper.png" alt="paper" id="paper" onclick="SeletecH('Paper')">
+                </div>
+
+                <div class=" hand scissors">
+                    <img src="/assets/Scissors.png" alt="scissors" id="scissors" onclick="SeletecH('Scissors')">
+                </div>
+
+                <div class=" hand rock">
+                    <img src="/assets/Rock.png" alt="rock" id="rock" onclick="SeletecH ('Rock')"">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main Part END -->
+
+        <!--result part Start    -->
+
+                <div class=" contest">
+                    <div class="Uplayer">
+                        <h1>You Picked</h1>
+                        <div class="HandImage">
+                            <img src="/assets/Paper.png" alt="question" id="Upick">
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="decision">
+                            <h1 id="result">YOU WIN</h1>
+                            <h5>AGAINST PC</h5>
+                        </div>
+                        <div class="Playagian" onclick="playAgain()">Play Again</div>
+                    </div>
+                    <div class="Ucomputer">
+                        <h1>PC Picked</h1>
+                        <div class="HandImage">
+                            <img src="/assets/Rock.png" alt="question" id="Cpick">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- result part END  -->
+            
+ 
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+                <div class="footer">
+                    <div class="rules" onclick="showRules()">RULES</div>  
+                    <div class="rules" id="next" onclick="winContainer()">NEXT</div>  
+                </div>
+    
+                <div>
+                    <button onclick="Showcontianer()" id="winPlay">playAgain</button>
+                </div>
+            
+</body>
+<script src=" /index.js"></script>
+
+</html>
