@@ -299,3 +299,98 @@ h5 {
 #next {
   margin-right: 10px;
 }
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.contain2 {
+  background-image: url(./Group\ 5.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80%;
+  max-width: 400px;
+  height: 30%;
+  max-height: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contain2 img {
+  max-width: 80%;
+  max-height: 70%;
+}
+
+.container2 h1 {
+  width: 464px;
+  height: 86px;
+  left: 436px;
+  top: 422px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 91px;
+  line-height: 107px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.container2 h5 {
+  width: 500px;
+  height: 48px;
+  left: 442px;
+  margin: 20px;
+  top: 533px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 41px;
+  line-height: 48px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+#winPlay {
+    padding: 15px 50px;
+
+  background: #ffffff;
+  border-radius: 9px;
+
+  border: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+
+  color: #6b6b6b;
+  margin-top: 8%;
+}

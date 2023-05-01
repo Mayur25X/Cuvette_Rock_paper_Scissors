@@ -1,14 +1,16 @@
 let nextB = document.querySelector("#next");
 // console.log(nextB);
 nextB.style.display = "none";
-const winPlay = document.querySelector("#winPlay");
-winPlay.style.display = "none";
+// const winPlay = document.querySelector("#winPlay");
+// winPlay.style.display = "none";
 localStorage.setItem("userScore", 0);
 localStorage.setItem("computerScore", 0);
 let userScore = Number(localStorage.getItem("userScore"));
 let ComScore = Number(localStorage.getItem("computerScore"));
 let container = document.querySelector(".container");
 let footer = document.querySelector(".footer");
+let container2 = document.querySelector(".container2");
+container2.style.display = "none"
 
 const SeletecH = (hand) => {
   let hands = document.querySelector(".hands");
@@ -139,6 +141,8 @@ const Showcontianer = () => {
   ComScore = 0;
   console.log("player", localStorage.getItem("userScore"));
   updateScore(userScore, ComScore);
+  nextB.style.display = "none";
+  container2.style.display = "none"
 };
 const winContainer = () => {
   let container = document.querySelector(".container");
@@ -146,4 +150,11 @@ const winContainer = () => {
   container.style.display = "none";
   footer.style.display = "none";
   winPlay.style.display = "flex";
+  container2.style.display = "flex"
 };
+
+
+
+
+
+
