@@ -125,7 +125,7 @@ h2 {
   height: 430px;
   flex-wrap: wrap;
   height: 100%;
-  background-image: url("/assets/triangle.png");
+  background-image: url("assets/triangle.png");
   background-repeat: no-repeat !important;
   background-position: center;
 }
